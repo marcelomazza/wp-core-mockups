@@ -257,18 +257,29 @@ var userSettings = {"url":"\/core\/src\/","uid":"1","time":"1423436714","secure"
 	<input type="text" name="post_title" size="30" value="" id="title" spellcheck="true" autocomplete="off" />
 </div>
 <div class="inside">
-<div id="edit-slug-box" class="hide-if-no-js"><strong>Permalink:</strong>
+<div id="edit-slug-box" class="edit-slug-box hide-if-no-js"><strong>Permalink:</strong>
 <span id="sample-permalink" tabindex="-1">http://localhost/core/src/2015/02/08/<span id="editable-post-name" title="Temporary permalink. Click to edit this part.">testing-title</span>/</span>
-‎<span id="edit-slug-buttons"><a class="edit-slug button button-small hide-if-no-js" onclick="editPermalink(18); return false;">Edit</a></span>
+‎<span id="edit-slug-buttons" class="edit-slug-buttons"><a class="edit-slug button button-small button-link hide-if-no-js" onclick="editPermalink(18); return false;">Edit</a></span>
 <span id="editable-post-name-full">testing-title</span>
-<span id="view-post-btn"><a href="http://localhost/core/src/?p=18&amp;preview=true" class="button button-small" target="wp-preview-18">View Post</a></span>
+<span id="view-post-btn" class="view-post-btn"><a href="http://localhost/core/src/?p=18&amp;preview=true" class="button button-small button-link" target="wp-preview-18">View Post</a></span>
 </div>
 </div>
 <input type="hidden" id="samplepermalinknonce" name="samplepermalinknonce" value="69528cc481" /></div><!-- /titlediv -->
 <div id="postdivrich" class="postarea wp-editor-expand">
 
 <div id="wp-content-wrap" class="wp-core-ui wp-editor-wrap tmce-active has-dfw"><link rel='stylesheet' id='editor-buttons-css'  href='http://localhost/core-mockups/src/wp-includes/css/editor.css?ver=4.2-alpha-31007-src' type='text/css' media='all' />
-<div id="wp-content-editor-tools" class="wp-editor-tools hide-if-no-js"><div id="wp-content-media-buttons" class="wp-media-buttons"><a href="#" id="insert-media-button" class="button insert-media add_media" data-editor="content" title="Add Media"><span class="wp-media-buttons-icon"></span> Add Media</a></div>
+
+<div id="wp-content-editor-tools" class="wp-editor-tools hide-if-no-js">
+	<div id="wp-content-media-buttons" class="wp-media-buttons">
+		<a href="#" id="insert-media-button" class="button insert-media add_media" data-editor="content" title="Add Media">
+			<span class="wp-media-buttons-icon"></span> Add Media
+		</a>
+		<div class="button-split-wrap">
+			<button class="button button-split-main insert-media add_media" data-editor="content" title="Add Media">
+				<span class="wp-media-buttons-icon"></span> Add Media
+			</button><button class="button button-split-side"></button>
+		</div>
+	</div>
 <div class="wp-editor-tabs"><button type="button" id="content-tmce" class="wp-switch-editor switch-tmce" onclick="switchEditors.switchto(this);">Visual</button>
 <button type="button" id="content-html" class="wp-switch-editor switch-html" onclick="switchEditors.switchto(this);">Text</button>
 </div>
