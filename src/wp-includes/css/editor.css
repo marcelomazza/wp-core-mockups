@@ -2103,6 +2103,23 @@ i.mce-i-hr:before {
 		max-width: 100%;
 		padding: 0 10px;
 	}
+
+	.wp-media-buttons,
+	.wp-editor-tabs {
+		float: none;
+	}
+
+	.wp-media-buttons .button {
+		margin-right: 0;
+	}	
+
+	button.wp-switch-editor {
+		display: block;
+		width: 42.3%;
+		margin: 0;
+		padding: 2.4% 3.5%;
+	}
+
 }
 
 /* =Localization

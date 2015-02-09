@@ -362,3 +362,16 @@ TABLE OF CONTENTS:
 	}
 
 }
+
+@media screen and ( max-width: 480px ) {
+
+	.wp-core-ui .button.button-link {
+		padding: 0 8px 1px;
+		border: none;
+		font-size: 13px;
+		color: #0074a2;
+		background: none;
+		box-shadow: none;
+	}
+
+}
